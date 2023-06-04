@@ -3,82 +3,48 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
+@article{hu2023ThoughtCloning,
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+  title={{Thought Cloning}: Learning to Think while Acting by Imitating Human Thinking},
+  author={Shengran Hu and Jeff Clune},
+  year={2023},
+  selected={true},
+  journal={arXiv preprint arXiv:2306.00323},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@InProceedings{emo2021,
+bibtex_show={true},
+abbr={emo2021},
+author="Hu, Shengran
+and Cheng, Ran
+and He, Cheng
+and Lu, Zhichao",
+title="Multi-objective Neural Architecture Search with Almost No Training",
+booktitle="Evolutionary Multi-Criterion Optimization",
+year="2021",
+publisher="Springer International Publishing",
+pages="492--503",
+abstract="In the recent past, neural architecture search (NAS) has attracted increasing attention from both academia and industries. Despite the steady stream of impressive empirical results, most existing NAS algorithms are computationally prohibitive to execute due to the costly iterations of stochastic gradient descent (SGD) training. In this work, we propose an effective alternative, dubbed Random-Weight Evaluation (RWE), to rapidly estimate the performance of network architectures. By just training the last linear classification layer, RWE reduces the computational cost of evaluating an architecture from hours to seconds. When integrated within an evolutionary multi-objective algorithm, RWE obtains a set of efficient architectures with state-of-the-art performance on CIFAR-10 with less than two hours' searching on a single GPU card. Ablation studies on rank-order correlations and transfer learning experiments to ImageNet have further validated the effectiveness of RWE.",
+pdf={https://arxiv.org/pdf/2011.13591.pdf},
+html={https://doi.org/10.1007/978-3-030-72062-9_39},
+preview={emo2021.jpg},
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  selected={true}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@InProceedings{CAIS2021,
+bibtex_show={true},
+abbr={CAIS2021},
+author="Hu, Shengran
+and Cheng, Ran
+and He, Cheng
+and Lu, Zhichao
+and Jing Wang
+and Miao Zhang",
+title="Accelerating Multi-Objective Neural Architecture Search by Random-Weight Evaluation",
+booktitle="Complex & Intelligent Systems",
+year="2021",
+abstract="For the goal of automated design of high-performance deep convolutional neural networks (CNNs), Neural Architecture Search (NAS) methodology is becoming increasingly important for both academia and industries. Due to the costly stochastic gradient descent (SGD) training of CNNs for performance evaluation, most existing NAS methods are computationally expensive for real-world deployments. To address this issue, we first introduce a new performance estimation metric, named Random-Weight Evaluation (RWE) to quantify the quality of CNNs in a cost-efficient manner. Instead of fully training the entire CNN, the RWE only trains its last layer and leaves the remainders with randomly initialized weights, which results in a single network evaluation in seconds. Second, a complexity metric is adopted for multi-objective NAS to balance the model size and performance. Overall, our proposed method obtains a set of efficient models with state-of-the-art performance in two real-world search spaces. Then the results obtained on the CIFAR-10 dataset are transferred to the ImageNet dataset to validate the practicality of the proposed algorithm. Moreover, ablation studies on NAS-Bench-301 datasets reveal the effectiveness of the proposed RWE in estimating the performance compared with existing methods.",
+selected={true},
+pdf={https://link.springer.com/content/pdf/10.1007/s40747-021-00594-5.pdf},
+html={https://doi.org/10.1007/s40747-021-00594-5},
+preview={CAIS2021.jpg},
 }
