@@ -2,6 +2,8 @@
  * Variables used throughout the theme.
  * To adjust anything, simply edit the variables below and rebuild the theme.
  ******************************************************************************/
+/* portfolio tinkering */
+/* add on-palm to be consistent with other jekyll theme media queries */
 /*******************************************************************************
  * Themes
  ******************************************************************************/
@@ -540,6 +542,82 @@ footer.sticky-bottom {
   text-align: right;
 }
 
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: 0.875rem;
+}
+
+.blankbox {
+  background: var(--global-theme-color);
+}
+
+.img_row {
+  height: 275px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.img_true {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  float: right;
+  object-fit: contain;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.col {
+  width: 100%;
+  height: 100%;
+  float: left;
+  object-fit: cover;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.one {
+  width: 33.33%;
+}
+
+.two {
+  width: 66.66%;
+}
+
+.three {
+  width: 100%;
+}
+
+.bibone {
+  width: 33.33%;
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-right: 25px;
+}
+
+.bibtwo {
+  width: 66.66%;
+  vertical-align: middle;
+}
+
+.caption {
+  height: 100%;
+  color: #aaa;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
 .publications h2 {
   color: var(--global-divider-color);
   font-size: 32px;
@@ -589,7 +667,7 @@ footer.sticky-bottom {
   max-height: 0px;
   overflow: hidden;
   text-align: justify;
-  -webkit-transition: 0.15s ease;
+  transition-property: 0.15s ease;
   -moz-transition: 0.15s ease;
   -ms-transition: 0.15s ease;
   -o-transition: 0.15s ease;
@@ -606,7 +684,7 @@ footer.sticky-bottom {
 }
 .bibliography li .hidden.open {
   max-height: 100em;
-  -webkit-transition: 0.15s ease;
+  transition-property: 0.15s ease;
   -moz-transition: 0.15s ease;
   -ms-transition: 0.15s ease;
   -o-transition: 0.15s ease;
@@ -621,7 +699,6 @@ footer.sticky-bottom {
 .bibliography abbr {
   position: absolute;
   left: -7em;
-  max-width: 200px;
 }
 
 .star {
