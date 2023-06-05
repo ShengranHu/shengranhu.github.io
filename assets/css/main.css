@@ -667,7 +667,7 @@ figcaption {
   max-height: 0px;
   overflow: hidden;
   text-align: justify;
-  transition-property: 0.15s ease;
+  -webkit-transition: 0.15s ease;
   -moz-transition: 0.15s ease;
   -ms-transition: 0.15s ease;
   -o-transition: 0.15s ease;
@@ -684,7 +684,7 @@ figcaption {
 }
 .bibliography li .hidden.open {
   max-height: 100em;
-  transition-property: 0.15s ease;
+  -webkit-transition: 0.15s ease;
   -moz-transition: 0.15s ease;
   -ms-transition: 0.15s ease;
   -o-transition: 0.15s ease;
