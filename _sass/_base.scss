@@ -671,7 +671,10 @@ footer.sticky-bottom {
           }
         }
       }
-      a.abstract, a.bibtex { cursor: pointer; }
+      a.abstract, a.bibtex { 
+        cursor: pointer; 
+        color: var(--global-theme-color);
+      }
       .hidden {
         font-size: 0.875rem;
         max-height: 0px;
