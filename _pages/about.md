@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Department of Computer Science, University of British Columbia
 
 profile:
   align: left
@@ -17,4 +17,11 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-The page is under construction.
+I am a Ph.D. student at University of British Columbia, advised by <a href="http://jeffclune.com/">Dr. Jeff Clune</a> .
+
+<p style="text-align:center">
+                <a href="mailto:hu.shengran@outlook.com">Email</a> / 
+                <a href="https://scholar.google.com/citations?user=QmFkLvUAAAAJ">Google Scholar</a> / 
+                <a href="https://github.com/ShengranHu">Github</a> /
+                <a href="https://twitter.com/shengranhu">twitter</a>
+              </p>

@@ -62,7 +62,7 @@
             {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
           {%- endif -%}
           {%- if author_is_self -%}
-            <strong><em>{{author.first}} {{author.last}}</em></strong>
+            <em><strong>{{author.first}} {{author.last}}</strong></em>
           {%- else -%}
             {%- if coauthor_url -%}
               <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
@@ -165,7 +165,7 @@
             <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
           {%- endif %}
           {%- if entry.code %}
-            <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+            [<a href="{{ entry.code }}" class="btn btn-sm z-depth-0" target="_blank">Code</a>]
           {%- endif %}
           {%- if entry.poster %}
             {% if entry.poster contains '://' -%}
