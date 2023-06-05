@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Department of Computer Science, University of British Columbia
+subtitle: University of British Columbia
 
 profile:
   align: right
