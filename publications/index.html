@@ -39,6 +39,11 @@
 
     <!-- Dark Mode -->
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark">
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
 
   </head>
 
@@ -73,6 +78,14 @@
               <li class="nav-item active">
                 <a class="nav-link" href="/publications/">publications<span class="sr-only">(current)</span></a>
               </li>
+
+              <!-- Toogle theme mode -->
+              <li class="toggle-container">
+                <button id="light-toggle" title="Change theme">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -102,297 +115,147 @@
             <!-- _pages/publications.md -->
 <div class="publications">
   <h2 class="year">2023</h2>
-  <ol class="bibliography"><li><div id="hu2023ThoughtCloning" class="col three">
-  <div style="clear: both;">
-    <div style="">
-        <img class="col bibone first" src="https://shengranhu.github.io/assets/img/teasers/TC_framework.png">
-    </div>
-  </div>
-  <div class="col bibtwo last">
-    
-      <span class="title">Thought Cloning: Learning to Think while Acting by Imitating Human Thinking</span>
-      <span class="author">
-        
-          
-            
-              
-                <em><b>Shengran Hu</b></em>,
-              
-            
-          
-        
-          
-            
-              
-                
-                  and <a href="http://jeffclune.com/" target="_blank" rel="external nofollow noopener">Jeff Clune</a>
-                
-              
-            
-          
-        
-      </span>
+  <ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 preview">
+<figure>
 
-      <span class="periodical">
-      
-        <em>arXiv preprint arXiv:2306.00323</em>
-      
-      
-        
-          2023
-        
-      
-      </span>
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/TC_framework-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/TC_framework-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/TC_framework-1400.webp"></source>
     
 
-    <span class="links">
-    
-      [<a class="abstract">Abs</a>]
-    
-    
-      [<a href="http://arxiv.org/abs/2306.00323" target="_blank" rel="external nofollow noopener">arXiv</a>]
-    
-      [<a class="bibtex">Bib</a>]
-    
-    
-    
-    
-    
-    
-    
-    
-      [<a href="https://github.com/ShengranHu/Thought-Cloning" target="_blank" rel="external nofollow noopener">Code</a>]
-    
-    </span>
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/TC_framework.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="TC_framework.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
-    <!-- Hidden abstract block -->
-    
-    <span class="abstract hidden">
-      <p>Language is often considered a key aspect of human thinking, providing us with exceptional abilities to generalize, explore, plan, replan, and adapt to new situations. However, Reinforcement Learning (RL) agents are far from human-level performance in any of these abilities. We hypothesize one reason for such cognitive deficiencies is that they lack the benefits of thinking in language and that we can improve AI agents by training them to think like humans do. We introduce a novel Imitation Learning framework, Thought Cloning, where the idea is to not just clone the behaviors of human demonstrators, but also the thoughts humans have as they perform these behaviors. While we expect Thought Cloning to truly shine at scale on internet-sized datasets of humans thinking out loud while acting (e.g. online videos with transcripts), here we conduct experiments in a domain where the thinking and action data are synthetically generated. Results reveal that Thought Cloning learns much faster than Behavioral Cloning and its performance advantage grows the further out of distribution test tasks are, highlighting its ability to better handle novel situations. Thought Cloning also provides important benefits for AI Safety and Interpretability, and makes it easier to debug and improve AI. Because we can observe the agent’s thoughts, we can (1) more easily diagnose why things are going wrong, making it easier to fix the problem, (2) steer the agent by correcting its thinking, or (3) prevent it from doing unsafe things it plans to do. Overall, by training agents how to think as well as behave, Thought Cloning creates safer, more powerful agents.</p>
-    </span>
-    
-    <!-- Hidden bibtex block -->
-    <div class="bibtex hidden">
-      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2023ThoughtCloning</span><span class="p">,</span>
+  </picture>
+
+</figure>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="hu2023ThoughtCloning" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Thought Cloning: Learning to Think while Acting by Imitating Human Thinking</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Shengran Hu</em>, and <a href="http://jeffclune.com/" rel="external nofollow noopener" target="_blank">Jeff Clune</a>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>arXiv preprint arXiv:2306.00323</em>, 2023
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2023ThoughtCloning</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{{Thought Cloning}: Learning to Think while Acting by Imitating Human Thinking}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Hu, Shengran and Clune, Jeff}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint arXiv:2306.00323}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-    </div>
-  </div>
-</div></li></ol>
+          </div>
+        </div>
+      </div>
+</li></ol>
 
   <h2 class="year">2021</h2>
   <ol class="bibliography">
-<li><div id="hu2021RWE" class="col three">
-  <div style="clear: both;">
-    <div style="">
-        <img class="col bibone first" src="https://shengranhu.github.io/assets/img/teasers/CAIS2021.jpg">
-    </div>
-  </div>
-  <div class="col bibtwo last">
-    
-      <span class="title">Accelerating Multi-Objective Neural Architecture Search by Random-Weight Evaluation</span>
-      <span class="author">
-        
-          
-            
-              
-                <em><b>Shengran Hu</b></em>,
-              
-            
-          
-        
-          
-            
-              
-                
-                  Ran Cheng,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  Cheng He,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  Zhichao Lu,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  Jing Wang,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  and Miao Zhang
-                
-              
-            
-          
-        
-      </span>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 preview">
+<figure>
 
-      <span class="periodical">
-      
-        <em>Complex &amp; Intelligent Systems</em>
-      
-      
-        
-          2021
-        
-      
-      </span>
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/emo2021-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/emo2021-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/emo2021-1400.webp"></source>
     
 
-    <span class="links">
-    
-      [<a class="abstract">Abs</a>]
-    
-    
-      [<a class="bibtex">Bib</a>]
-    
-    
-    
-    
-      [<a href="https://shengranhu.github.io/assets/documents/https://link.springer.com/content/pdf/10.1007/s40747-021-00594-5.pdf" target="_blank">PDF</a>]
-    
-    
-    
-    
-    
-    </span>
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/emo2021.jpg" class="preview z-depth-1 rounded" width="auto" height="auto" alt="emo2021.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
-    <!-- Hidden abstract block -->
-    
-    <span class="abstract hidden">
-      <p>For the goal of automated design of high-performance deep convolutional neural networks (CNNs), Neural Architecture Search (NAS) methodology is becoming increasingly important for both academia and industries. Due to the costly stochastic gradient descent (SGD) training of CNNs for performance evaluation, most existing NAS methods are computationally expensive for real-world deployments. To address this issue, we first introduce a new performance estimation metric, named Random-Weight Evaluation (RWE) to quantify the quality of CNNs in a cost-efficient manner. Instead of fully training the entire CNN, the RWE only trains its last layer and leaves the remainders with randomly initialized weights, which results in a single network evaluation in seconds. Second, a complexity metric is adopted for multi-objective NAS to balance the model size and performance. Overall, our proposed method obtains a set of efficient models with state-of-the-art performance in two real-world search spaces. Then the results obtained on the CIFAR-10 dataset are transferred to the ImageNet dataset to validate the practicality of the proposed algorithm. Moreover, ablation studies on NAS-Bench-301 datasets reveal the effectiveness of the proposed RWE in estimating the performance compared with existing methods.</p>
-    </span>
-    
-    <!-- Hidden bibtex block -->
-    <div class="bibtex hidden">
-      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">hu2021RWE</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Hu, Shengran and Cheng, Ran and He, Cheng and Lu, Zhichao and Wang, Jing and Zhang, Miao}</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Accelerating Multi-Objective Neural Architecture Search by Random-Weight Evaluation}</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Complex &amp; Intelligent Systems}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure>
-    </div>
-  </div>
-</div></li>
-<li><div id="hu2021AlmostNoTraining" class="col three">
-  <div style="clear: both;">
-    <div style="">
-        <img class="col bibone first" src="https://shengranhu.github.io/assets/img/teasers/emo2021.jpg">
-    </div>
-  </div>
-  <div class="col bibtwo last">
-    
-      <span class="title">Multi-objective Neural Architecture Search with Almost No Training</span>
-      <span class="author">
-        
-          
-            
-              
-                <em><b>Shengran Hu</b></em>,
-              
-            
-          
-        
-          
-            
-              
-                
-                  Ran Cheng,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  Cheng He,
-                
-              
-            
-          
-        
-          
-            
-              
-                
-                  and Zhichao Lu
-                
-              
-            
-          
-        
-      </span>
+  </picture>
 
-      <span class="periodical">
-      
-        <em>Evolutionary Multi-Criterion Optimization</em>
-      
-      
-        
-          2021
-        
-      
-      </span>
-    
+</figure>
+</div>
 
-    <span class="links">
-    
-      [<a class="abstract">Abs</a>]
-    
-    
-      [<a href="http://arxiv.org/abs/2011.13591" target="_blank" rel="external nofollow noopener">arXiv</a>]
-    
-      [<a class="bibtex">Bib</a>]
-    
-    
-    
-    
-    
-    
-    
-    
-    </span>
+        <!-- Entry bib key -->
+        <div id="emo2021" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Multi-objective Neural Architecture Search with Almost No Training</div>
+        <!-- Author -->
+        <div class="author">
+        
 
-    <!-- Hidden abstract block -->
-    
-    <span class="abstract hidden">
-      <p>In the recent past, neural architecture search (NAS) has attracted increasing attention from both academia and industries. Despite the steady stream of impressive empirical results, most existing NAS algorithms are computationally prohibitive to execute due to the costly iterations of stochastic gradient descent (SGD) training. In this work, we propose an effective alternative, dubbed Random-Weight Evaluation (RWE), to rapidly estimate the performance of network architectures. By just training the last linear classification layer, RWE reduces the computational cost of evaluating an architecture from hours to seconds. When integrated within an evolutionary multi-objective algorithm, RWE obtains a set of efficient architectures with state-of-the-art performance on CIFAR-10 with less than two hours’ searching on a single GPU card. Ablation studies on rank-order correlations and transfer learning experiments to ImageNet have further validated the effectiveness of RWE.</p>
-    </span>
-    
-    <!-- Hidden bibtex block -->
-    <div class="bibtex hidden">
-      <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">hu2021AlmostNoTraining</span><span class="p">,</span>
+        <em>Shengran Hu</em>, Ran Cheng, Cheng He, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'Zhichao Lu' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Evolutionary Multi-Criterion Optimization</em>, 2021
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://doi.org/10.1007/978-3-030-72062-9_39" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="https://arxiv.org/pdf/2011.13591.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>In the recent past, neural architecture search (NAS) has attracted increasing attention from both academia and industries. Despite the steady stream of impressive empirical results, most existing NAS algorithms are computationally prohibitive to execute due to the costly iterations of stochastic gradient descent (SGD) training. In this work, we propose an effective alternative, dubbed Random-Weight Evaluation (RWE), to rapidly estimate the performance of network architectures. By just training the last linear classification layer, RWE reduces the computational cost of evaluating an architecture from hours to seconds. When integrated within an evolutionary multi-objective algorithm, RWE obtains a set of efficient architectures with state-of-the-art performance on CIFAR-10 with less than two hours’ searching on a single GPU card. Ablation studies on rank-order correlations and transfer learning experiments to ImageNet have further validated the effectiveness of RWE.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">emo2021</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Hu, Shengran and Cheng, Ran and He, Cheng and Lu, Zhichao}</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Multi-objective Neural Architecture Search with Almost No Training}</span><span class="p">,</span>
   <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Evolutionary Multi-Criterion Optimization}</span><span class="p">,</span>
@@ -400,9 +263,93 @@
   <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Springer International Publishing}</span><span class="p">,</span>
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{492--503}</span><span class="p">,</span>
 <span class="p">}</span></code></pre></figure>
-    </div>
-  </div>
-</div></li>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 preview">
+<figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/CAIS2021-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/CAIS2021-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/CAIS2021-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/CAIS2021.jpg" class="preview z-depth-1 rounded" width="auto" height="auto" alt="CAIS2021.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+</div>
+
+        <!-- Entry bib key -->
+        <div id="CAIS2021" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Accelerating Multi-Objective Neural Architecture Search by Random-Weight Evaluation</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Shengran Hu</em>, Ran Cheng, Cheng He, and
+          <span class="more-authors" title="click to view 3 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '3 more authors' ? 'Zhichao Lu, Jing Wang, Miao Zhang' : '3 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">3 more authors</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In Complex &amp; Intelligent Systems</em>, 2021
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://doi.org/10.1007/s40747-021-00594-5" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="https://link.springer.com/content/pdf/10.1007/s40747-021-00594-5.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>For the goal of automated design of high-performance deep convolutional neural networks (CNNs), Neural Architecture Search (NAS) methodology is becoming increasingly important for both academia and industries. Due to the costly stochastic gradient descent (SGD) training of CNNs for performance evaluation, most existing NAS methods are computationally expensive for real-world deployments. To address this issue, we first introduce a new performance estimation metric, named Random-Weight Evaluation (RWE) to quantify the quality of CNNs in a cost-efficient manner. Instead of fully training the entire CNN, the RWE only trains its last layer and leaves the remainders with randomly initialized weights, which results in a single network evaluation in seconds. Second, a complexity metric is adopted for multi-objective NAS to balance the model size and performance. Overall, our proposed method obtains a set of efficient models with state-of-the-art performance in two real-world search spaces. Then the results obtained on the CIFAR-10 dataset are transferred to the ImageNet dataset to validate the practicality of the proposed algorithm. Moreover, ablation studies on NAS-Bench-301 datasets reveal the effectiveness of the proposed RWE in estimating the performance compared with existing methods.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">CAIS2021</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Hu, Shengran and Cheng, Ran and He, Cheng and Lu, Zhichao and Wang, Jing and Zhang, Miao}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Accelerating Multi-Objective Neural Architecture Search by Random-Weight Evaluation}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Complex &amp; Intelligent Systems}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li>
 </ol>
 
 
