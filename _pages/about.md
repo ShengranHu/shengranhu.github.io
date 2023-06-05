@@ -5,7 +5,7 @@ permalink: /
 subtitle: Department of Computer Science, University of British Columbia
 
 profile:
-  align: left
+  align: right
   image: hsr.jpg
   image_circular: false # crops the image to make it circular
   address: >
