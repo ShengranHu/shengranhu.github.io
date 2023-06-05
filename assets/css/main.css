@@ -648,6 +648,7 @@ footer.sticky-bottom {
 }
 .publications ol.bibliography li a.abstract, .publications ol.bibliography li a.bibtex {
   cursor: pointer;
+  color: var(--global-theme-color);
 }
 .publications ol.bibliography li .hidden {
   font-size: 0.875rem;
