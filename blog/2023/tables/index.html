@@ -125,12 +125,12 @@
     <div id="markdown-content">
       <p>Using markdown to display tables is easy. Just use the following syntax:</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Left aligned | Center aligned | Right aligned |
+<pre><code class="language-markdown">| Left aligned | Center aligned | Right aligned |
 | :----------- | :------------: | ------------: |
 | Left 1       | center 1       | right 1       |
 | Left 2       | center 2       | right 2       |
 | Left 3       | center 3       | right 3       |
-</code></pre></div></div>
+</code></pre>
 
 <p>That will generate:</p>
 
@@ -165,19 +165,19 @@
 
 <p>It is also possible to use HTML to display tables. For example, the following HTML code will display a table with <a href="https://bootstrap-table.com/" rel="external nofollow noopener" target="_blank">Bootstrap Table</a>, loaded from a JSON file:</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span>
-  <span class="na">id=</span><span class="s">"table"</span>
-  <span class="na">data-toggle=</span><span class="s">"table"</span>
-  <span class="na">data-url=</span><span class="s">"{{ '/assets/json/table_data.json' | relative_url }}"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;thead&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"id"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"name"</span><span class="nt">&gt;</span>Item Name<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"price"</span><span class="nt">&gt;</span>Item Price<span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/thead&gt;</span>
-<span class="nt">&lt;/table&gt;</span>
-</code></pre></div></div>
+<pre><code class="language-html">&lt;table
+  id="table"
+  data-toggle="table"
+  data-url="{{ '/assets/json/table_data.json' | relative_url }}"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th data-field="id"&gt;ID&lt;/th&gt;
+      &lt;th data-field="name"&gt;Item Name&lt;/th&gt;
+      &lt;th data-field="price"&gt;Item Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+&lt;/table&gt;
+</code></pre>
 
 <table data-toggle="table" data-url="/assets/json/table_data.json">
   <thead>
@@ -193,23 +193,23 @@
 
 <p>By using <a href="https://bootstrap-table.com/" rel="external nofollow noopener" target="_blank">Bootstrap Table</a> it is possible to create pretty complex tables, with pagination, search, and more. For example, the following HTML code will display a table, loaded from a JSON file, with pagination, search, checkboxes, and header/content alignment. For more information, check the <a href="https://examples.bootstrap-table.com/index.html" rel="external nofollow noopener" target="_blank">documentation</a>.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table</span>
-  <span class="na">data-click-to-select=</span><span class="s">"true"</span>
-  <span class="na">data-height=</span><span class="s">"460"</span>
-  <span class="na">data-pagination=</span><span class="s">"true"</span>
-  <span class="na">data-search=</span><span class="s">"true"</span>
-  <span class="na">data-toggle=</span><span class="s">"table"</span>
-  <span class="na">data-url=</span><span class="s">"{{ '/assets/json/table_data.json' | relative_url }}"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;thead&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-checkbox=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"id"</span> <span class="na">data-halign=</span><span class="s">"left"</span> <span class="na">data-align=</span><span class="s">"center"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"name"</span> <span class="na">data-halign=</span><span class="s">"center"</span> <span class="na">data-align=</span><span class="s">"right"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>Item Name<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th</span> <span class="na">data-field=</span><span class="s">"price"</span> <span class="na">data-halign=</span><span class="s">"right"</span> <span class="na">data-align=</span><span class="s">"left"</span> <span class="na">data-sortable=</span><span class="s">"true"</span><span class="nt">&gt;</span>Item Price<span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/thead&gt;</span>
-<span class="nt">&lt;/table&gt;</span>
-</code></pre></div></div>
+<pre><code class="language-html">&lt;table
+  data-click-to-select="true"
+  data-height="460"
+  data-pagination="true"
+  data-search="true"
+  data-toggle="table"
+  data-url="{{ '/assets/json/table_data.json' | relative_url }}"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th data-checkbox="true"&gt;&lt;/th&gt;
+      &lt;th data-field="id" data-halign="left" data-align="center" data-sortable="true"&gt;ID&lt;/th&gt;
+      &lt;th data-field="name" data-halign="center" data-align="right" data-sortable="true"&gt;Item Name&lt;/th&gt;
+      &lt;th data-field="price" data-halign="right" data-align="left" data-sortable="true"&gt;Item Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+&lt;/table&gt;
+</code></pre>
 
 <table data-click-to-select="true" data-height="460" data-pagination="true" data-search="true" data-toggle="table" data-url="/assets/json/table_data.json">
   <thead>
@@ -266,7 +266,7 @@
     <a class="text-pink-700 underline font-semibold hover:text-pink-800" href="/blog/2023/videos/">a post with videos</a>
   </li>
 
-<div id="giscus_thread" style="max-width: 700px; margin: 0 auto;">
+<div id="giscus_thread" style="max-width: 900px; margin: 0 auto;">
   <script>
     let giscusTheme = localStorage.getItem("theme");
     let giscusAttributes = {

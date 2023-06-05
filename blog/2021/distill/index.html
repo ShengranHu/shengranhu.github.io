@@ -218,10 +218,10 @@
         <h2 id="equations">Equations</h2>
 
 <p>This theme supports rendering beautiful math in inline and display modes using <a href="https://www.mathjax.org/" rel="external nofollow noopener" target="_blank">MathJax 3</a> engine.
-You just need to surround your math expression with <code class="language-plaintext highlighter-rouge">$$</code>, like <code class="language-plaintext highlighter-rouge">$$ E = mc^2 $$</code>.
+You just need to surround your math expression with <code>$$</code>, like <code>$$ E = mc^2 $$</code>.
 If you leave it inside a paragraph, it will produce an inline expression, just like \(E = mc^2\).</p>
 
-<p>To use display mode, again surround your expression with <code class="language-plaintext highlighter-rouge">$$</code> and place it as a separate paragraph.
+<p>To use display mode, again surround your expression with <code>$$</code> and place it as a separate paragraph.
 Here is an example:</p>
 
 \[\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)\]
@@ -232,7 +232,7 @@ Here is an example:</p>
 
 <h2 id="citations">Citations</h2>
 
-<p>Citations are then used in the article body with the <code class="language-plaintext highlighter-rouge">&lt;d-cite&gt;</code> tag.
+<p>Citations are then used in the article body with the <code>&lt;d-cite&gt;</code> tag.
 The key attribute is a reference to the id provided in the bibliography.
 The key attribute can take multiple ids, separated by commas.</p>
 
@@ -246,16 +246,16 @@ However, we consider it good style to mention author last names if you discuss s
 
 <h2 id="footnotes">Footnotes</h2>
 
-<p>Just wrap the text you would like to show up in a footnote in a <code class="language-plaintext highlighter-rouge">&lt;d-footnote&gt;</code> tag.
+<p>Just wrap the text you would like to show up in a footnote in a <code>&lt;d-footnote&gt;</code> tag.
 The number of the footnote will be automatically generated.<d-footnote>This will become a hoverable footnote.</d-footnote></p>
 
 <hr>
 
 <h2 id="code-blocks">Code Blocks</h2>
 
-<p>Syntax highlighting is provided within <code class="language-plaintext highlighter-rouge">&lt;d-code&gt;</code> tags.
-An example of inline code snippets: <code class="language-plaintext highlighter-rouge">&lt;d-code language="html"&gt;let x = 10;&lt;/d-code&gt;</code>.
-For larger blocks of code, add a <code class="language-plaintext highlighter-rouge">block</code> attribute:</p>
+<p>Syntax highlighting is provided within <code>&lt;d-code&gt;</code> tags.
+An example of inline code snippets: <code>&lt;d-code language="html"&gt;let x = 10;&lt;/d-code&gt;</code>.
+For larger blocks of code, add a <code>block</code> attribute:</p>
 
 <d-code block="" language="javascript">
   var x = 25;
@@ -264,8 +264,8 @@ For larger blocks of code, add a <code class="language-plaintext highlighter-rou
   }
 </d-code>
 
-<p><strong>Note:</strong> <code class="language-plaintext highlighter-rouge">&lt;d-code&gt;</code> blocks do not look good in the dark mode.
-You can always use the default code-highlight using the <code class="language-plaintext highlighter-rouge">highlight</code> liquid tag:</p>
+<p><strong>Note:</strong> <code>&lt;d-code&gt;</code> blocks do not look good in the dark mode.
+You can always use the default code-highlight using the <code>highlight</code> liquid tag:</p>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">25</span><span class="p">;</span>
 <span class="kd">function</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
@@ -307,10 +307,10 @@ To generate the plot that you see above, you can use the following code snippet:
 
 <h2 id="details-boxes">Details boxes</h2>
 
-<p>Details boxes are collapsible boxes which hide additional information from the user. They can be added with the <code class="language-plaintext highlighter-rouge">details</code> liquid tag:</p>
+<p>Details boxes are collapsible boxes which hide additional information from the user. They can be added with the <code>details</code> liquid tag:</p>
 
 <details><summary>Click here to know more</summary>
-<p>Additional details, where math \(2x - 1\) and <code class="language-plaintext highlighter-rouge">code</code> is rendered correctly.</p>
+<p>Additional details, where math \(2x - 1\) and <code>code</code> is rendered correctly.</p>
 </details>
 
 <hr>
@@ -318,13 +318,13 @@ To generate the plot that you see above, you can use the following code snippet:
 <h2 id="layouts">Layouts</h2>
 
 <p>The main text column is referred to as the body.
-It is the assumed layout of any direct descendants of the <code class="language-plaintext highlighter-rouge">d-article</code> element.</p>
+It is the assumed layout of any direct descendants of the <code>d-article</code> element.</p>
 
 <div class="fake-img l-body">
   <p>.l-body</p>
 </div>
 
-<p>For images you want to display a little larger, try <code class="language-plaintext highlighter-rouge">.l-page</code>:</p>
+<p>For images you want to display a little larger, try <code>.l-page</code>:</p>
 
 <div class="fake-img l-page">
   <p>.l-page</p>
@@ -342,7 +342,7 @@ For instance:</p>
 </div>
 
 <p>Occasionally you’ll want to use the full browser width.
-For this, use <code class="language-plaintext highlighter-rouge">.l-screen</code>.
+For this, use <code>.l-screen</code>.
 You can also inset the element a little from the edge of the browser by using the inset variant.</p>
 
 <div class="fake-img l-screen">
@@ -353,7 +353,7 @@ You can also inset the element a little from the edge of the browser by using th
 </div>
 
 <p>The final layout is for marginalia, asides, and footnotes.
-It does not interrupt the normal flow of <code class="language-plaintext highlighter-rouge">.l-body</code> sized text except on mobile screen sizes.</p>
+It does not interrupt the normal flow of <code>.l-body</code> sized text except on mobile screen sizes.</p>
 
 <div class="fake-img l-gutter">
   <p>.l-gutter</p>
@@ -363,7 +363,7 @@ It does not interrupt the normal flow of <code class="language-plaintext highlig
 
 <h2 id="other-typography">Other Typography?</h2>
 
-<p>Emphasis, aka italics, with <em>asterisks</em> (<code class="language-plaintext highlighter-rouge">*asterisks*</code>) or <em>underscores</em> (<code class="language-plaintext highlighter-rouge">_underscores_</code>).</p>
+<p>Emphasis, aka italics, with <em>asterisks</em> (<code>*asterisks*</code>) or <em>underscores</em> (<code>_underscores_</code>).</p>
 
 <p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
 
@@ -418,19 +418,19 @@ example.com (but not on Github, for example).</p>
 <p>Reference-style:
 <img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 2"></p>
 
-<p>Inline <code class="language-plaintext highlighter-rouge">code</code> has <code class="language-plaintext highlighter-rouge">back-ticks around</code> it.</p>
+<p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">JavaScript syntax highlighting</span><span class="dl">"</span><span class="p">;</span>
-<span class="nf">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
-</code></pre></div></div>
+<pre><code class="language-javascript">var s = "JavaScript syntax highlighting";
+alert(s);
+</code></pre>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="sh">"</span><span class="s">Python syntax highlighting</span><span class="sh">"</span>
-<span class="k">print</span> <span class="n">s</span>
-</code></pre></div></div>
+<pre><code class="language-python">s = "Python syntax highlighting"
+print s
+</code></pre>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>No language indicated, so no syntax highlighting.
+<pre><code>No language indicated, so no syntax highlighting.
 But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
-</code></pre></div></div>
+</code></pre>
 
 <p>Colons can be used to align columns.</p>
 
@@ -476,7 +476,7 @@ raw Markdown line up prettily. You can also use inline Markdown.</p>
   <tbody>
     <tr>
       <td><em>Still</em></td>
-      <td><code class="language-plaintext highlighter-rouge">renders</code></td>
+      <td><code>renders</code></td>
       <td><strong>nicely</strong></td>
     </tr>
     <tr>
@@ -512,7 +512,7 @@ This line is only separated by a single newline, so it’s a separate line in th
         <d-citation-list></d-citation-list>
       </d-appendix>
 
-      <d-bibliography src="/assets/bibliography/2018-12-22-distill.bib"></d-bibliography><div id="giscus_thread" style="max-width: 700px; margin: 0 auto;">
+      <d-bibliography src="/assets/bibliography/2018-12-22-distill.bib"></d-bibliography><div id="giscus_thread" style="max-width: 900px; margin: 0 auto;">
   <script>
     let giscusTheme = localStorage.getItem("theme");
     let giscusAttributes = {
