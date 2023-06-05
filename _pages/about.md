@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: University of British Columbia
+subtitle:
 
 profile:
   align: right
