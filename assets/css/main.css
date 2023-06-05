@@ -646,6 +646,9 @@ footer.sticky-bottom {
 .publications ol.bibliography li .badges span:hover {
   text-decoration: underline;
 }
+.publications ol.bibliography li a.abstract, .publications ol.bibliography li a.bibtex {
+  cursor: pointer;
+}
 .publications ol.bibliography li .hidden {
   font-size: 0.875rem;
   max-height: 0px;
