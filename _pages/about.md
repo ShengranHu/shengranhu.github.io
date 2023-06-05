@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Ph.D. student at University of British Columbia, advised by <a href="http://jeffclune.com/">Dr. Jeff Clune</a> .
+I am a Ph.D. student at University of British Columbia, advised by <a href="http://jeffclune.com/">Dr. Jeff Clune</a>. My research interests focus on AI, Deep Learning, and AI-Generating Algorithms (AI-GAs).
 
 <p style="text-align:center">
                 <a href="mailto:hu.shengran@outlook.com">Email</a> / 
