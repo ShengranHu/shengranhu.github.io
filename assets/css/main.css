@@ -621,6 +621,7 @@ footer.sticky-bottom {
 .bibliography abbr {
   position: absolute;
   left: -7em;
+  max-width: 200px;
 }
 
 .star {
