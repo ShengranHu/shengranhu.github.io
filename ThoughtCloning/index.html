@@ -55,6 +55,7 @@
         <style>
             .author-info {
                 text-align: center;
+                margin-right: 5px; /* Adjust this to move the block to the right */
             }
             
             .author {
@@ -72,8 +73,8 @@
                 margin-bottom: 5px;
             }
             
-            .mail {
-                font-family: monospace; /* Makes the email look like \texttt{} in LaTeX */
+            .author-name {
+                font-size: 20px; /* Adjust this value to increase or decrease the author name size */
             }
             </style>
             
@@ -82,10 +83,10 @@
                     <ul class="author-info">
                         <div class="author">
                             <li>
-                                <a href="https://www.shengranhu.com/">Shengran Hu</a><sup>1,2</sup><br/>
+                                <a href="https://www.shengranhu.com/" class="author-name">Shengran Hu</a><sup>1,2</sup><br/>
                             </li>
                             <li>
-                                <a href="http://jeffclune.com/">Jeff Clune</a><sup>1,2,3</sup><br/>
+                                <a href="http://jeffclune.com/" class="author-name">Jeff Clune</a><sup>1,2,3</sup><br/>
                             </li>
                         </div>
                         <li class="affiliation">
@@ -153,7 +154,7 @@
                 </p>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
