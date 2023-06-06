@@ -7,7 +7,7 @@ first_name: Shengran
 middle_name:
 last_name: Hu
 email: hu.shengran@outlook.com
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
+description: 胡圣然
   
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.

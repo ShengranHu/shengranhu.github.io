@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our work **Thought Cloning** is available on <a href="https://arxiv.org/abs/2306.00323">[arXiv]</a>! Check the <a href="https://www.shengranhu.com/ThoughtCloning/">[project page]</a> and introduction <a href="https://twitter.com/jeffclune/status/1664618665160085505">[tweet thread]</a>.
+Introducing our work **Thought Cloning**! Check the [<a href="https://www.shengranhu.com/ThoughtCloning/">project page</a>] and [<a href="https://twitter.com/jeffclune/status/1664618665160085505">tweet thread</a>].
