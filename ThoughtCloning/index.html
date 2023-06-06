@@ -83,11 +83,9 @@
                         <div class="author">
                             <li>
                                 <a href="https://www.shengranhu.com/">Shengran Hu</a><sup>1,2</sup><br/>
-                                <a href="mailto:srhu@cs.ubc.ca">srhu@cs.ubc.ca</a>
                             </li>
                             <li>
                                 <a href="http://jeffclune.com/">Jeff Clune</a><sup>1,2,3</sup><br/>
-                                <a href="mailto:jclune@gmail.com">jclune@gmail.com</a>
                             </li>
                         </div>
                         <li class="affiliation">
@@ -102,38 +100,6 @@
                     </ul>
                 </div>
             </div>
-            
-          
-
-
-            <style>
-                .link-content {
-                  text-align: center;
-                }
-              </style>
-              
-              <div class="row">
-                <div class="col-md-12 text-center">
-                  <ul class="list-inline">
-                    <li>
-                      <a href="https://arxiv.org/abs/2306.00323">
-                        <div class="link-content">
-                          <img src="img/TC_paper_image.png" height="60px">
-                          <h4><strong>Paper</strong></h4>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/ShengranHu/Thought-Cloning">
-                        <div class="link-content">
-                          <img src="img/github.png" height="60px">
-                          <h4><strong>Code</strong></h4>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
               
 
 
@@ -145,7 +111,7 @@
                 
                 .list-inline li {
                   margin-right: 50px;  /* Adjust this value to increase/decrease the gap between items */
-                  margin-left: 50px;
+                  margin-left: 80px;
                 }
                 
                 </style>
@@ -154,7 +120,7 @@
                   <div class="col-md-12 text-center">
                     <ul class="list-inline">
                       <li>
-                        <a href="https://arxiv.org/abs/2108.07058">
+                        <a href="https://arxiv.org/abs/2306.00323">
                           <div class="link-content">
                             <img src="img/TC_paper_image.png" height="60px">
                             <h4><strong>Paper</strong></h4>
@@ -172,7 +138,22 @@
                     </ul>
                   </div>
                 </div>
-
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <video width="100%" controls>
+                    <source src="data/Thought_Cloning.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    Language is often considered a key aspect of human thinking, providing us with exceptional abilities to generalize, explore, plan, replan, and adapt to new situations. However, Reinforcement Learning (RL) agents are far from human-level performance in any of these abilities. We hypothesize one reason for such cognitive deficiencies is that they lack the benefits of thinking in language and that we can improve AI agents by training them to think like humans do. We introduce a novel Imitation Learning framework, Thought Cloning, where the idea is to not just clone the behaviors of human demonstrators, but also the thoughts humans have as they perform these behaviors. While we expect Thought Cloning to truly shine at scale on internet-sized datasets of humans thinking out loud while acting (e.g. online videos with transcripts), here we conduct experiments in a domain where the thinking and action data are synthetically generated. Results reveal that Thought Cloning learns much faster than Behavioral Cloning and its performance advantage grows the further out of distribution test tasks are, highlighting its ability to better handle novel situations. Thought Cloning also provides important benefits for AI Safety and Interpretability, and makes it easier to debug and improve AI. Because we can observe the agent's thoughts, we can (1) more easily diagnose why things are going wrong, making it easier to fix the problem, (2) steer the agent by correcting its thinking, or (3) prevent it from doing unsafe things it plans to do. Overall, by training agents how to think as well as behave, Thought Cloning creates safer, more powerful agents.
+                </p>
+            </div>
+        </div>
+        
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
