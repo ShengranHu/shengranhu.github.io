@@ -45,7 +45,7 @@
     <div class="container" id="main">
         <div class="row">
             <h2 class="col-md-12 text-center">
-                <b>Thought Cloning</b>: Learning to Think while Acting by Imitating Human Thinking</br>
+                <b>Thought Cloning</b>: <br/>Learning to Think while Acting by Imitating Human Thinking</br>
                 <!-- <small>
                     ICCV 2021
                 </small> -->
@@ -54,59 +54,83 @@
         
         <style>
             .author-info {
-              text-align: center;
+                text-align: center;
             }
-          
-            .author-info li {
-              list-style-type: none;
-              margin-bottom: 10px;
+            
+            .author {
+                display: flex;
+                justify-content: center;
+                gap: 50px; /* Change this value to adjust space between authors */
             }
-          </style>
-          
-          <div class="row">
-              <div class="col-md-12 text-center">
-                  <ul class="author-info">
-                      <li>
-                          Shengran Hu<sup>1,2</sup><br/>
-                          <a href="mailto:srhu@cs.ubc.ca">srhu@cs.ubc.ca</a>
-                      </li>
-                      <li>
-                          Jeff Clune<sup>1,2,3</sup><br/>
-                          <a href="mailto:jclune@gmail.com">jclune@gmail.com</a>
-                      </li>
-                      <li>
-                          <sup>1</sup>Department of Computer Science, University of British Columbia
-                      </li>
-                      <li>
-                          <sup>2</sup>Vector Institute
-                      </li>
-                      <li>
-                          <sup>3</sup>Canada CIFAR AI Chair
-                      </li>
-                  </ul>
-              </div>
-          </div>
-          
-
-
-        <div class="row">
+            
+            .author li {
+                list-style-type: none;
+            }
+            
+            .affiliation {
+                margin-top: 10px; /* Change these values to adjust space between lines */
+                margin-bottom: 10px;
+            }
+            </style>
+            
+            <div class="row">
                 <div class="col-md-12 text-center">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://arxiv.org/abs/2108.07058">
-                            <image src="img/TC_paper_image.png" height="60px">
-                                <h4><strong>Paper</strong></h4>
-                            </a>
+                    <ul class="author-info">
+                        <div class="author">
+                            <li>
+                                <a href="https://www.shengranhu.com/">Shengran Hu</a><sup>1,2</sup><br/>
+                                <a href="mailto:srhu@cs.ubc.ca">srhu@cs.ubc.ca</a>
+                            </li>
+                            <li>
+                                <a href="http://jeffclune.com/">Jeff Clune</a><sup>1,2,3</sup><br/>
+                                <a href="mailto:jclune@gmail.com">jclune@gmail.com</a>
+                            </li>
+                        </div>
+                        <li class="affiliation">
+                            <sup>1</sup>Department of Computer Science, University of British Columbia
                         </li>
-                        <li>
-                            <a href="https://github.com/ShengranHu/Thought-Cloning">
-                            <image src="img/github.png" height="60px">
-                                <h4><strong>Code</strong></h4>
-                            </a>
+                        <li class="affiliation">
+                            <sup>2</sup>Vector Institute
+                        </li>
+                        <li class="affiliation">
+                            <sup>3</sup>Canada CIFAR AI Chair
                         </li>
                     </ul>
                 </div>
-        </div>
+            </div>
+            
+          
+
+
+            <style>
+                .link-content {
+                  text-align: center;
+                }
+              </style>
+              
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <ul class="list-inline">
+                    <li>
+                      <a href="https://arxiv.org/abs/2108.07058">
+                        <div class="link-content">
+                          <img src="img/TC_paper_image.png" height="60px">
+                          <h4><strong>Paper</strong></h4>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/ShengranHu/Thought-Cloning">
+                        <div class="link-content">
+                          <img src="img/github.png" height="60px">
+                          <h4><strong>Code</strong></h4>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
 
 
 
@@ -145,7 +169,7 @@
                 <image src="img/main_performance.png" class="img-responsive" alt="overview"><br>
                     <p class="text-justify">
                     </p>
-                    <image src="img/four_tasks.png" class="img-responsive" alt="overview"><br>
+                    <image src="img/generalization.png" class="img-responsive" alt="overview"><br>
                     <p class="text-justify">
                     </p>
             </div>
@@ -159,12 +183,12 @@
                 </h3>
                 <div class="form-group col-md-10 col-md-offset-1">
                     <textarea id="bibtex" class="form-control" readonly>
-                        @article{hu2023ThoughtCloning,
-                            title={{Thought Cloning}: Learning to Think while Acting by Imitating Human Thinking},
-                            author={Shengran Hu and Jeff Clune},
-                            year={2023},
-                            journal={arXiv preprint arXiv:2306.00323},
-                          }</textarea>
+@article{hu2023ThoughtCloning, 
+title={{Thought Cloning}: Learning to Think while Acting by Imitating Human Thinking},
+author={Shengran Hu and Jeff Clune},
+year={2023},
+journal={arXiv preprint arXiv:2306.00323},
+}</textarea>
                 </div>
             </div>
         </div>
