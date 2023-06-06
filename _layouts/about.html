@@ -5,21 +5,13 @@ horizontal: false
 
 <!-- about.html -->
       <div class="post">
-        <!-- <header class="post-header">
+        <header class="post-header">
           <h1 class="post-title">
            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
           </h1>
-          <p class="desc">{{ page.subtitle }}</p>
-        </header> -->
-        <header class="post-header">
-          <h1 class="post-title">
-              {% if site.title == "blank" -%}
-                  <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }} <br\> {{ page.subtitle }}
-              {%- else -%}
-                  {{ site.title }}
-              {%- endif %}
-          </h1>
+          <p class="post-title">{{ page.subtitle }}</p>
         </header>
+        
 
         <article>
           {% if page.profile -%}
