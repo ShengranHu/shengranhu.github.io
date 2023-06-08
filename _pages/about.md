@@ -21,7 +21,7 @@ My name is Shengran Hu (胡圣然 in Chinese). I am a Ph.D. student at Universit
 
 <p style="text-align:center">
                 <a href="mailto:hu.shengran@outlook.com">Email</a> / 
-                <a href="https://scholar.google.com/citations?user=QmFkLvUAAAAJ">Google Scholar</a> / 
+                <a href="https://scholar.google.com/citations?user=xt4UjA4AAAAJ">Google Scholar</a> / 
                 <a href="https://github.com/ShengranHu">Github</a> /
                 <a href="https://twitter.com/shengranhu">twitter</a>
               </p>
