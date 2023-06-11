@@ -136,13 +136,13 @@
           <!-- Links/Buttons -->
           <div class="links">
           {%- if entry.abstract %}
-            [<a class="abstract">Abs</a>]
+            [<a href="/abstract-content" class="abstract">Abs</a>]
           {%- endif %}
           {%- if entry.arxiv %}
             [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
           {%- endif %}
           {%- if entry.bibtex_show %}
-            [<a class="bibtex">BibTex</a>]
+            [<a href="/bibtex-content" class="bibtex">BibTex</a>]
           {%- endif %}
           {%- if entry.html %}
             [<a href="{{ entry.html }}" target="_blank">Project Page</a>]
