@@ -593,9 +593,12 @@ footer.sticky-bottom {
 .publications ol.bibliography li .abbr abbr a:hover {
   text-decoration: none;
 }
-.publications ol.bibliography li .abbr .award {
+.publications ol.bibliography li .award {
   color: var(--global-theme-color) !important;
+  display: block;
   border: 1px solid var(--global-theme-color);
+  padding: 5px;
+  margin-top: 5px;
 }
 .publications ol.bibliography li .title {
   font-weight: bolder;
