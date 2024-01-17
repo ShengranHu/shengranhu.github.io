@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hello, World! I am Shengran Hu (胡圣然 in Chinese). I am a PhD student at University of British Columbia, advised by <a href="http://jeffclune.com/">Dr. Jeff Clune</a>. My research interests focus on Reinforcement Learning (RL), Language Models, and Open-Endedness.
+Hello, World! I am Shengran Hu (胡圣然 in Chinese). I am a PhD student at University of British Columbia, advised by <a href="http://jeffclune.com/">Dr. Jeff Clune</a>. My research interests focus on AI Agents, Language Models, and Open-Endedness.
 
 <p style="text-align:center">
                 <a href="mailto:hu.shengran@outlook.com">Email</a> / 
