@@ -39,6 +39,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
     
     <script src="js/app.js"></script>
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
@@ -151,7 +154,7 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
-                    Go-Explore is a powerful family of algorithms designed to solve hard-exploration problems, built on the principle of archiving discovered states, and iteratively returning to and exploring from the most promising states.
+                    <a href="https://www.nature.com/articles/s41586-020-03157-9">Go-Explore</a> is a powerful family of algorithms designed to solve hard-exploration problems, built on the principle of archiving discovered states, and iteratively returning to and exploring from the most promising states.
                     This approach has led to superhuman performance across a wide variety of challenging problems including Atari games and robotic control, but requires manually designing heuristics to guide exploration (i.e. determine which states to save and explore from, and what actions to consider next), which is time-consuming and infeasible in general.
                     To resolve this, we propose Intelligent Go-Explore (IGE) which greatly extends the scope of the original Go-Explore by replacing these heuristics with the intelligence and internalized human notions of interestingness captured by giant pretrained foundation models (FMs).
                     This provides IGE with a human-like ability to instinctively identify how interesting or promising any new state is (e.g. discovering new objects, locations, or behaviors), even in complex environments where heuristics are hard to define.
@@ -174,29 +177,77 @@
                     <p class="text-justify">
                         Intelligent Go-Explore (IGE) integrates the intelligence and internalized human notions of interestingness from giant pretrained FMs into all stages of the <a href="https://www.nature.com/articles/s41586-020-03157-9">Go-Explore</a> algorithm, enabling FM agents to robustly explore in complex environments.
                         <strong>Bottom:</strong> Classic Go-Explore solved hard exploration problems by archiving novel discovered states, resetting to promising ones via domain-specific heuristics, and then performing random exploration.
-                        <strong>Top:</strong> Our approach, \ouralgolong, enables Go-Explore to tackle any problem that is representable in the context of a large language or multimodal model.
+                        <strong>Top:</strong> Our approach, Intelligent Go-Explore, enables Go-Explore to tackle any problem that is representable in the context of a large language or multimodal model.
                         Instead of manually defining heuristics, we query the foundation model at all stages, enabling our approach to automatically catch and return to serendipitous discoveries, and harness the power of FM agents to explore.
                     </p>
             </div>
         </div>
 
-        <!-- <div class="row">
+        <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Experimental results
                 </h3>
                 <p class="text-justify">
-                    Thinking in language helps humans generalize, explore, plan, replan, and combine old knowledge in new ways. Harnessing this power, Thought Cloning agents learn much faster than conventional Behavioral Cloning and can better handle or adapt to novel situations.
+                    we evaluate Intelligent Go-Explore across three text environments that require search and exploration.
+                    We demonstrate IGE's ability to handle partially observable and complex observation spaces, discover solutions involving long chains of actions, and effectively improve the ability of FM agents to explore.
                 </p>
-                <image src="img/main_performance.png" class="img-responsive" alt="overview"><br>  
-                <image src="img/generalization.png" class="img-responsive" alt="overview"><br>
-                
+                <h5>
+                    Game of 24
+                </h5>
                 <p class="text-justify">
-                    Thought Cloning also contributes to AI Safety. Because we can observe the agent's thoughts, we can (1) more easily diagnose why things are going wrong, (2) steer the agent by correcting its thinking, or (3) prevent it from doing unsafe things it plans to do. We develop “Precrime Intervention”, a simple method that allows users to define unsafe behaviors even after training. It halts the agent upon detecting dangerous thoughts. Precrime Intervention works near perfectly in our testing, showing its potential for AI Safety.
+                    We first demonstrate the effectiveness of IGE in a mathematical reasoning task, <a href="https://en.wikipedia.org/wiki/24_(puzzle)">Game of 24</a>.
+                    The goal is to perform basic arithmetic operations \( (+, -, \times, \div) \) starting from 4 numbers to obtain 24.
+                    For example, given input \( (4, 9, 10, 13) \), a possible solution could be \( (10 - 4) \times (13 - 9) = 24 \).
                 </p>
-                <image src="img/precrime_intervention.png" class="img-responsive" alt="overview"><br>
+                <image src="img/results_game_of_24.png" class="img-responsive" alt="overview"><br>  
+                <p class="text-justify">
+                    IGE explores the Game of 24 with the intelligence of FMs and reaches 100% success rate on average 70.8% quicker than DFS, the next best baseline.
+                    IGE completes all problems within 150 environment operations.
+                    Our use of archiving and intelligent action selection allows us to greatly outperform prior LLM agents with an equal number of operations performed.
+                    The success rate is computed over 100 test problems.
+                </p>
+                
+                <h5>
+                    BabyAI-Text
+                </h5>
+                <p class="text-justify">
+                    Next, we show that IGE scales to the <a href="https://github.com/flowersteam/Grounding_LLMs_with_online_RL">BabyAI-Text</a> environment, which is a procedurally-generated partially-observable 2D gridworld with text-based observations.
+                    The agent is given a textual goal instruction which could correspond to one or more instructions in a sequence, e.g. "pick up X and then go to Y".
+                    The task is challenging even for humans to complete and requires forming a model of the world from partial text descriptions.
+                    This kind of state observation would make it <em>hard to define heuristics to determine how good any particular state is</em>, as in classic Go-Explore.
+                    The optimal path to a solution may include moving blocking objects as well as finding keys to open doors.
+                </p>
+                <image src="img/results_baby_ai.png" class="img-responsive" alt="overview"><br>  
+                <p class="text-justify">
+                    IGE can find solutions to challenging tasks in the BabyAI-Text environment more effectively and with orders of magnitude fewer online steps than prior RL-trained baselines <a href="https://arxiv.org/abs/2302.02662">GLAM</a>.
+                    Task types are in order of difficulty.
+                    As tasks become more difficult, the performance gap of IGE v.s. the LLM baselines grows.
+                    We show the mean and 95% bootstrap confidence interval over 25 seeds per environment type.
+                </p>
+
+                <h5>
+                    TextWorld
+                </h5>
+                <p class="text-justify">
+                    Finally, we show IGE's ability to tackle tasks requiring long-horizon memory and planning, exploration, and commonsense in <a href="https://github.com/microsoft/TextWorld">TextWorld</a>, a classic text-based agent benchmark.
+                    We consider three challenging games in Textworld: Treasure Hunter, The Cooking Game, and Coin Collector.
+                    In each game, the agent needs to complete the task while navigating a maze of different rooms, while only seeing the current room's description in text. 
+                    The agent interacts with the world using free-form natural language commands, such as "go east" or "cook potato with oven".
+                    In Treasure Hunter, the agent has to find a specific item by exploring, finding keys, and unlocking doors and containers.
+                    In The Cooking Game, the agent must find a recipe, locate and process (e.g., dice, cut, chop) ingredients, and cook them according to the recipe using various kitchen appliances (e.g., oven, pan).
+                    In Coin Collector, the agent must find a coin randomly located in the maze, testing its navigation and exploration skills.
+                </p>
+                <image src="img/results_textworld.png" class="img-responsive" alt="overview"><br>  
+                <p class="text-justify">
+                    IGE outperforms state-of-the-art FM agents in three challenging text games in TextWorld. 
+                    These results illustrate the powerful capabilities of planning, commonsense reasoning, and exploration of IGE.
+                    Notably, in the Coin Collector game where hard exploration is required, we observe BFS-like search behavior emerge in IGE, enabling it to find the most efficient solution where all other approaches exhaust the environment horizon.
+                    We show the mean and 95% bootstrap confidence interval over 25 seeds for each game.
+                </p>
+
             </div>
-        </div> -->
+        </div>
         
             
         <div class="row">
