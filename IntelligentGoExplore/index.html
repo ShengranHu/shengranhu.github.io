@@ -192,15 +192,15 @@
                     we evaluate Intelligent Go-Explore across three text environments that require search and exploration.
                     We demonstrate IGE's ability to handle partially observable and complex observation spaces, discover solutions involving long chains of actions, and effectively improve the ability of FM agents to explore.
                 </p>
-                <h5>
+                <h4>
                     Game of 24
-                </h5>
+                </h4>
                 <p class="text-justify">
                     We first demonstrate the effectiveness of IGE in a mathematical reasoning task, <a href="https://en.wikipedia.org/wiki/24_(puzzle)">Game of 24</a>.
                     The goal is to perform basic arithmetic operations \( (+, -, \times, \div) \) starting from 4 numbers to obtain 24.
                     For example, given input \( (4, 9, 10, 13) \), a possible solution could be \( (10 - 4) \times (13 - 9) = 24 \).
                 </p>
-                <image src="img/results_game_of_24.png" class="img-responsive" alt="overview"><br>  
+                <img src="img/results_game_of_24.png" class="img-responsive" alt="overview" style="width: 30%; height: auto;"><br>
                 <p class="text-justify">
                     IGE explores the Game of 24 with the intelligence of FMs and reaches 100% success rate on average 70.8% quicker than DFS, the next best baseline.
                     IGE completes all problems within 150 environment operations.
@@ -208,9 +208,9 @@
                     The success rate is computed over 100 test problems.
                 </p>
                 
-                <h5>
+                <h4>
                     BabyAI-Text
-                </h5>
+                </h4>
                 <p class="text-justify">
                     Next, we show that IGE scales to the <a href="https://github.com/flowersteam/Grounding_LLMs_with_online_RL">BabyAI-Text</a> environment, which is a procedurally-generated partially-observable 2D gridworld with text-based observations.
                     The agent is given a textual goal instruction which could correspond to one or more instructions in a sequence, e.g. "pick up X and then go to Y".
@@ -226,9 +226,9 @@
                     We show the mean and 95% bootstrap confidence interval over 25 seeds per environment type.
                 </p>
 
-                <h5>
+                <h4>
                     TextWorld
-                </h5>
+                </h4>
                 <p class="text-justify">
                     Finally, we show IGE's ability to tackle tasks requiring long-horizon memory and planning, exploration, and commonsense in <a href="https://github.com/microsoft/TextWorld">TextWorld</a>, a classic text-based agent benchmark.
                     We consider three challenging games in Textworld: Treasure Hunter, The Cooking Game, and Coin Collector.
