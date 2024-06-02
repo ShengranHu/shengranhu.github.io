@@ -110,9 +110,9 @@
         {% assign proceedings = "inproceedings,incollection" | split: ','%}
         {% assign thesis = "thesis,mastersthesis,phdthesis" | split: ','%}
         {% if entry.type == "article" -%}
-          {%- capture entrytype -%}<em>{{entry.journal}}</em> <strong>({{ entry.abbr }})</strong>{%- endcapture -%}
+          {%- capture entrytype -%}<em>{{entry.journal}}</em> <strong>{{ entry.abbr }}</strong>{%- endcapture -%}
         {%- elsif proceedings contains entry.type -%}
-          {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> <strong>({{ entry.abbr }})</strong>{%- endcapture -%}
+          {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> <strong>{{ entry.abbr }}</strong>{%- endcapture -%}
         {%- elsif thesis contains entry.type -%}
           {%- capture entrytype -%}<em>{{entry.school}}</em>{%- endcapture -%}
         {%- else -%}
