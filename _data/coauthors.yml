@@ -6,4 +6,22 @@
   - firstname: ["Cong", "C.", "Cong Lu"]
     url: https://www.conglu.co.uk/
 
+"Yamada":
+  - firstname: ["Yutaro", "Y.", "Yutaro Yamada"]
+    url: https://yutaroyamada.com/
 
+"Lange":
+  - firstname: ["Robert Tjarko", "Robert", "Robert Lange"]
+    url: https://roberttlange.com/
+
+"Lu":
+  - firstname: ["Chris", "C.", "Chris Lu"]
+    url: https://chrislu.page/
+
+"Jakob":
+  - firstname: ["Jakob", "J.", "Jakob Foerster"]
+    url: https://www.jakobfoerster.com/
+
+"Ha":
+  - firstname: ["David", "D.", "David Ha"]
+    url: https://otoro.net/ml/
