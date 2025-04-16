@@ -2,7 +2,7 @@
   - firstname: ["Jeff", "J.", "Jeff Clune"]
     url: http://jeffclune.com/
 
-"Cong Lu":
+"Lu":
   - firstname: ["Cong", "Cong Lu"]
     url: https://www.conglu.co.uk/
 
@@ -13,10 +13,6 @@
 "Lange":
   - firstname: ["Robert Tjarko", "Robert", "Robert Lange"]
     url: https://roberttlange.com/
-
-"Chris Lu":
-  - firstname: ["Chris", "Chris Lu"]
-    url: https://chrislu.page/
 
 "Jakob":
   - firstname: ["Jakob", "J.", "Jakob Foerster"]
