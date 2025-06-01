@@ -14,6 +14,7 @@
     color: #666;
     line-height: 1.2;
 }
+
 .media-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -21,32 +22,44 @@
     margin-bottom: 2rem;
 }
 
+/* 1) FIX EACH CARD’S SIZE */
 .media-card {
     background: white;
     border-radius: 12px;
-    /* cut padding in half to bring logo closer */
-    padding: 15px;
-    /* lower the min-height so the card can shrink */
-    min-height: 80px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
-    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
     cursor: pointer;
     text-decoration: none;
     color: inherit;
+
+    /* FIXED DIMENSIONS: */
+    width: 100%;         /* Will fill its grid cell width */
+    height: 120px;       /* FIX the height to 120px (for example) */
+
+    /* CENTER CONTENT: */
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #e5e7eb;
-}
 
-.media-logo {
-    /* you can also lower this if you want the image smaller */
-    max-height: 50px;
+    /* shrink padding so image sits closer to edges */
+    padding: 10px;
+    transition: all 0.3s ease;
 }
 
 .media-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* 2) MAKE THE IMAGE “BEST‐FIT” INSIDE THE FIXED BOX */
+.media-logo {
+    /* never let the logo overflow its parent */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+
+    /* optional: remove default inline spacing */
+    display: block;
 }
 
 @media (max-width: 1024px) {
@@ -83,6 +96,7 @@
     
     <a href="https://en.wikipedia.org/wiki/Timeline_of_computing_2020%E2%80%93present#cite_ref-107" class="media-card" target="_blank">
         <img src="/assets/img/media/wikipedia.png" alt="The Logic" class="media-logo">
+        <br>
         <div class="wikipedia-text">
             <div class="wikipedia-subtitle">Timeline of computing 2020–present</div>
         </div>
