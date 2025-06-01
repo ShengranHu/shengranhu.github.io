@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Coverage</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #f3f4f6;
+        }
+        
+        .media-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        
+        .media-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 120px;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .media-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+        }
+        
+        .media-logo {
+            max-width: 100%;
+            max-height: 60px;
+            object-fit: contain;
+        }
+        
+        @media (max-width: 1024px) {
+            .media-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .media-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .media-card {
+                padding: 25px;
+                min-height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="media-container">
+        <a href="https://www.science.org/content/article/artificial-intelligence-may-benefit-talking-itself" class="media-card" target="_blank">
+            <img src="https://commons.wikimedia.org/wiki/File:Science_AAAS_logo.svg" alt="WIRED" class="media-logo">
+        </a>
+        
+        <a href="https://www.sciencenews.org" class="media-card" target="_blank">
+            <img src="https://commons.wikimedia.org/wiki/File:Wikipedia_name_logo.png" alt="Science News" class="media-logo">
+        </a>
+        
+        <a href="https://www.airstreetpress.com" class="media-card" target="_blank">
+            <img src="https://commons.wikimedia.org/wiki/File:Wikipedia_name_logo.png" alt="Air Street Press" class="media-logo">
+        </a>
+        
+        <a href="https://thelogic.co" class="media-card" target="_blank">
+            <img src="https://commons.wikimedia.org/wiki/File:Wikipedia_name_logo.png" alt="The Logic" class="media-logo">
+        </a>
+    </div>
+</body>
+</html>
