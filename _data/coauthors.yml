@@ -17,10 +17,6 @@
   - firstname: ["Robert Tjarko", "Robert", "Robert Lange"]
     url: https://roberttlange.com/
 
-"Jakob":
-  - firstname: ["Jakob", "J.", "Jakob Foerster"]
-    url: https://www.jakobfoerster.com/
-
 "Ha":
   - firstname: ["David", "D.", "David Ha"]
     url: https://otoro.net/ml/
@@ -28,3 +24,7 @@
 "Zhang":
   - firstname: ["Jenny", "J.", "Jenny Zhang"]
     url: https://www.jennyzhangzt.com/
+
+"Foerster":
+  - firstname: ["Jakob", "J.", "Jakob Foerster"]
+    url: https://www.jakobfoerster.com/
