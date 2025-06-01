@@ -113,7 +113,7 @@
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/hsr.jpg" class="img-fluid w-50 z-depth-1 rounded" width="auto" height="auto" alt="hsr.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/hsr.jpg" class="img-fluid w-120 z-depth-1 rounded" width="auto" height="auto" alt="hsr.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -137,130 +137,6 @@
               </p>
 
           </div>
-          <!-- Media -->
-           <h4>Selected Media Coverage</h4>
-<style>
-    .media-container {
-    display: grid;
-    /* Six cards per row */
-    grid-template-columns: repeat(5, 1fr);
-    gap: 12px; /* slightly smaller gap between cards */
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-/* Smaller, fixed-size cards */
-.media-card {
-    background: white;
-    border-radius: 12px;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit;
-
-    /* FIXED DIMENSIONS: */
-    width: 100%;      /* fill its grid column */
-    height: 80px;     /* smaller height (example: 80px) */
-
-    /* Center logo inside */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    /* tighter padding */
-    padding: 6px;
-    transition: all 0.3s ease;
-}
-
-.media-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Ensure the logo always “best-fit” inside the 80px-high card */
-.media-logo {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    display: block;
-}
-
-/* RESPONSIVE ADJUSTMENT (optional) */
-@media (max-width: 1024px) {
-    .media-container {
-        /* Fallback to 3 or 4 columns on narrower screens */
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .media-container {
-        /* Stack to 2 columns on small/mobile */
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .media-card {
-        height: 60px;   /* optionally shrink further on mobile */
-        padding: 4px;
-    }
-}
-    </style>
-    
-    <div class="media-container">
-    
-        <a href="https://www.science.org/content/article/artificial-intelligence-may-benefit-talking-itself" class="media-card" target="_blank" rel="external nofollow noopener">
-            <img src="/assets/img/media/science.svg" alt="Science" class="media-logo">
-        </a>
-
-        <a href="https://www.forbes.com/sites/craigsmith/2025/03/23/when-ai-takes-over-scientific-discovery/" class="media-card" target="_blank" rel="external nofollow noopener">
-            <img src="/assets/img/media/forbes.png" alt="forbes" class="media-logo">
-        </a>
-        <a href="https://www.wired.com/story/ai-scientist-ubc-lab/" class="media-card" target="_blank" rel="external nofollow noopener">
-            <img src="/assets/img/media/wired.svg" alt="wired" class="media-logo">
-        </a>
-        
-        <a href="https://www.sciencenews.org/article/ai-train-creative-human-intuition" class="media-card" target="_blank" rel="external nofollow noopener">
-            <img src="/assets/img/media/scienceNews.png" alt="science News" class="media-logo">
-        </a>
-
-        <a href="https://www.theglobeandmail.com/business/article-i-hope-im-wrong-why-some-experts-see-doom-in-ai/" class="media-card" target="_blank" rel="external nofollow noopener">
-            <img src="/assets/img/media/the_globe_and_mail.png" alt="globe and mail" class="media-logo">
-        </a>
-
-        <a href="https://www.youtube.com/watch?v=mw5WIDGRLnA" class="media-card" target="_blank" rel="external nofollow noopener">
-            <img src="/assets/img/media/MLST.jpeg" alt="Wiki" class="media-logo">
-        </a>
-
-        <a href="https://news.ycombinator.com/item?id=44135369" class="media-card" target="_blank" rel="external nofollow noopener">
-            <img src="/assets/img/media/HN.webp" alt="Hacker News" class="media-logo">
-        </a>
-    
-        <a href="https://press.airstreet.com/p/open-endedness-is-all-well-need" class="media-card" target="_blank" rel="external nofollow noopener">
-            <img src="/assets/img/media/airstreet.png" alt="air street" class="media-logo">
-        </a>
-
-        <a href="https://thenewstack.io/agentic-ai-tools-for-building-and-managing-agentic-systems/" class="media-card" target="_blank" rel="external nofollow noopener">
-            <img src="/assets/img/media/theNewStack.png" alt="the New Stack" class="media-logo">
-        </a>
-
-        <a href="https://en.wikipedia.org/wiki/Timeline_of_computing_2020%E2%80%93present#cite_ref-107" class="media-card" target="_blank" rel="external nofollow noopener">
-            <img src="/assets/img/media/Wiki_cap.png" alt="Wiki" class="media-logo">
-        </a>
-    </div>
-          <!-- Talk -->
-           <h4>Selected Talks</h4>
-    
-<div class="media-container">
-
-    <a href="https://twimlai.com/podcast/twimlai/automated-design-of-agentic-systems/" class="media-card" target="_blank" rel="external nofollow noopener">
-        <img src="/assets/img/media/TWIML.png" alt="TWIML" class="media-logo">
-    </a>
-
-    <a href="https://neurips.cc/virtual/2024/106575/" class="media-card" target="_blank" rel="external nofollow noopener">
-        <img src="/assets/img/media/Neurips_langame.png" alt="NeurIPS workshop" class="media-logo">
-    </a>
-
-</div>
           <!-- News -->
           
 
@@ -781,6 +657,132 @@
 </ol>
           </div>
 
+
+
+          <!-- Media -->
+           <h4>Selected Media Coverage</h4>
+<style>
+    .media-container {
+    display: grid;
+    /* Six cards per row */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px; /* slightly smaller gap between cards */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Smaller, fixed-size cards */
+.media-card {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+
+    /* FIXED DIMENSIONS: */
+    width: 100%;      /* fill its grid column */
+    height: 80px;     /* smaller height (example: 80px) */
+
+    /* Center logo inside */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* tighter padding */
+    padding: 6px;
+    transition: all 0.3s ease;
+}
+
+.media-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Ensure the logo always “best-fit” inside the 80px-high card */
+.media-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* RESPONSIVE ADJUSTMENT (optional) */
+@media (max-width: 1024px) {
+    .media-container {
+        /* Fallback to 3 or 4 columns on narrower screens */
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .media-container {
+        /* Stack to 2 columns on small/mobile */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .media-card {
+        height: 60px;   /* optionally shrink further on mobile */
+        padding: 4px;
+    }
+}
+    </style>
+    
+    <div class="media-container">
+    
+        <a href="https://www.science.org/content/article/artificial-intelligence-may-benefit-talking-itself" class="media-card" target="_blank" rel="external nofollow noopener">
+            <img src="/assets/img/media/science.svg" alt="Science" class="media-logo">
+        </a>
+
+        <a href="https://www.forbes.com/sites/craigsmith/2025/03/23/when-ai-takes-over-scientific-discovery/" class="media-card" target="_blank" rel="external nofollow noopener">
+            <img src="/assets/img/media/forbes.png" alt="forbes" class="media-logo">
+        </a>
+        <a href="https://www.wired.com/story/ai-scientist-ubc-lab/" class="media-card" target="_blank" rel="external nofollow noopener">
+            <img src="/assets/img/media/wired.svg" alt="wired" class="media-logo">
+        </a>
+        
+        <a href="https://www.sciencenews.org/article/ai-train-creative-human-intuition" class="media-card" target="_blank" rel="external nofollow noopener">
+            <img src="/assets/img/media/scienceNews.png" alt="science News" class="media-logo">
+        </a>
+
+        <a href="https://www.theglobeandmail.com/business/article-i-hope-im-wrong-why-some-experts-see-doom-in-ai/" class="media-card" target="_blank" rel="external nofollow noopener">
+            <img src="/assets/img/media/the_globe_and_mail.png" alt="globe and mail" class="media-logo">
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=mw5WIDGRLnA" class="media-card" target="_blank" rel="external nofollow noopener">
+            <img src="/assets/img/media/MLST.jpeg" alt="Wiki" class="media-logo">
+        </a>
+
+        <a href="https://news.ycombinator.com/item?id=44135369" class="media-card" target="_blank" rel="external nofollow noopener">
+            <img src="/assets/img/media/HN.webp" alt="Hacker News" class="media-logo">
+        </a>
+    
+        <a href="https://press.airstreet.com/p/open-endedness-is-all-well-need" class="media-card" target="_blank" rel="external nofollow noopener">
+            <img src="/assets/img/media/airstreet.png" alt="air street" class="media-logo">
+        </a>
+
+        <a href="https://thenewstack.io/agentic-ai-tools-for-building-and-managing-agentic-systems/" class="media-card" target="_blank" rel="external nofollow noopener">
+            <img src="/assets/img/media/theNewStack.png" alt="the New Stack" class="media-logo">
+        </a>
+
+        <a href="https://en.wikipedia.org/wiki/Timeline_of_computing_2020%E2%80%93present#cite_ref-107" class="media-card" target="_blank" rel="external nofollow noopener">
+            <img src="/assets/img/media/Wiki_cap.png" alt="Wiki" class="media-logo">
+        </a>
+    </div>
+          <!-- Talk -->
+           <h4>Selected Talks</h4>
+    
+<div class="media-container">
+
+    <a href="https://twimlai.com/podcast/twimlai/automated-design-of-agentic-systems/" class="media-card" target="_blank" rel="external nofollow noopener">
+        <img src="/assets/img/media/TWIML.png" alt="TWIML" class="media-logo">
+    </a>
+
+    <a href="https://neurips.cc/virtual/2024/106575/" class="media-card" target="_blank" rel="external nofollow noopener">
+        <img src="/assets/img/media/Neurips_langame.png" alt="NeurIPS workshop" class="media-logo">
+    </a>
+
+</div>
 
           <!-- Social -->
             <div class="social">
