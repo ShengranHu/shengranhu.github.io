@@ -140,30 +140,14 @@
           <!-- Media -->
            <h2>Selected Media Coverage</h2>
 <style>
-.wikipedia-title {
-    font-family: 'Linux Libertine', 'Georgia', serif;
-    font-size: 20px;
-    font-weight: 400;
-    color: #000;
-    margin-bottom: 4px;
-}
-
-.wikipedia-subtitle {
-    font-family: 'Linux Libertine', 'Georgia', serif;
-    font-size: 12px;
-    font-weight: 300;
-    color: #666;
-    line-height: 1.2;
-}
-
-.media-container {
+    .media-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-bottom: 2rem;
+    /* Six cards per row */
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px; /* slightly smaller gap between cards */
 }
 
-/* 1) FIX EACH CARD’S SIZE */
+/* Smaller, fixed-size cards */
 .media-card {
     background: white;
     border-radius: 12px;
@@ -174,76 +158,77 @@
     color: inherit;
 
     /* FIXED DIMENSIONS: */
-    width: 100%;         /* Will fill its grid cell width */
-    height: 120px;       /* FIX the height to 120px (for example) */
+    width: 100%;      /* fill its grid column */
+    height: 80px;     /* smaller height (example: 80px) */
 
-    /* CENTER CONTENT: */
+    /* Center logo inside */
     display: flex;
     align-items: center;
     justify-content: center;
 
-    /* shrink padding so image sits closer to edges */
-    padding: 10px;
+    /* tighter padding */
+    padding: 6px;
     transition: all 0.3s ease;
 }
 
 .media-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* 2) MAKE THE IMAGE “BEST‐FIT” INSIDE THE FIXED BOX */
+/* Ensure the logo always “best-fit” inside the 80px-high card */
 .media-logo {
-    /* never let the logo overflow its parent */
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-
-    /* optional: remove default inline spacing */
     display: block;
 }
 
+/* RESPONSIVE ADJUSTMENT (optional) */
 @media (max-width: 1024px) {
     .media-container {
-        grid-template-columns: repeat(2, 1fr);
+        /* Fallback to 3 or 4 columns on narrower screens */
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media (max-width: 768px) {
     .media-container {
-        grid-template-columns: 1fr;
+        /* Stack to 2 columns on small/mobile */
+        grid-template-columns: repeat(2, 1fr);
     }
-    
     .media-card {
-        padding: 25px;
-        min-height: 100px;
+        height: 60px;   /* optionally shrink further on mobile */
+        padding: 4px;
     }
 }
-</style>
-
-<div class="media-container">
-
-    <a href="https://www.science.org/content/article/artificial-intelligence-may-benefit-talking-itself" class="media-card" target="_blank" rel="external nofollow noopener">
-        <img src="/assets/img/media/science.svg" alt="Science" class="media-logo">
-    </a>
-
-    <a href="https://twimlai.com/podcast/twimlai/automated-design-of-agentic-systems/" class="media-card" target="_blank" rel="external nofollow noopener">
-        <img src="/assets/img/media/TWIML.jpg" alt="Air Street Press" class="media-logo">
-    </a>
-
-    <a href="https://www.wired.com/story/ai-scientist-ubc-lab/" class="media-card" target="_blank" rel="external nofollow noopener">
-        <img src="/assets/img/media/wired.svg" alt="The Logic" class="media-logo">
-    </a>
+    </style>
     
-    <a href="https://en.wikipedia.org/wiki/Timeline_of_computing_2020%E2%80%93present#cite_ref-107" class="media-card" target="_blank" rel="external nofollow noopener">
-        <img src="/assets/img/media/wikipedia.png" alt="The Logic" class="media-logo">
-        <br>
-        <div class="wikipedia-text">
-            <div class="wikipedia-subtitle">Timeline of computing 2020–present</div>
-        </div>
-    </a>
+    <div class="media-container">
     
-</div>
+        <a href="https://www.science.org/content/article/artificial-intelligence-may-benefit-talking-itself" class="media-card" target="_blank" rel="external nofollow noopener">
+            <img src="/assets/img/media/science.svg" alt="Science" class="media-logo">
+        </a>
+    
+        <a href="https://twimlai.com/podcast/twimlai/automated-design-of-agentic-systems/" class="media-card" target="_blank" rel="external nofollow noopener">
+            <img src="/assets/img/media/TWIML.png" alt="Air Street Press" class="media-logo">
+        </a>
+    
+        <a href="https://www.wired.com/story/ai-scientist-ubc-lab/" class="media-card" target="_blank" rel="external nofollow noopener">
+            <img src="/assets/img/media/wired.svg" alt="The Logic" class="media-logo">
+        </a>
+        
+        <a href="https://www.sciencenews.org/article/ai-train-creative-human-intuition" class="media-card" target="_blank" rel="external nofollow noopener">
+            <img src="/assets/img/media/scienceNews.svg" alt="The Logic" class="media-logo">
+        </a>
+        <a href="https://press.airstreet.com/p/open-endedness-is-all-well-need" class="media-card" target="_blank" rel="external nofollow noopener">
+            <img src="/assets/img/media/airstreet.png" alt="The Logic" class="media-logo">
+        </a>
+        <a href="https://en.wikipedia.org/wiki/Timeline_of_computing_2020%E2%80%93present#cite_ref-107" class="media-card" target="_blank" rel="external nofollow noopener">
+            <img src="/assets/img/media/wikipedia.png" alt="The Logic" class="media-logo">
+        </a>
+        
+    </div>
           <!-- News -->
           <h2>News</h2>
 <style>
