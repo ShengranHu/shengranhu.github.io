@@ -21,7 +21,7 @@ horizontal: false
               {% if page.profile.image_circular %}
                 {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
               {% else %}
-                {%- assign profile_image_class = "img-fluid w-50 z-depth-1 rounded" -%}
+                {%- assign profile_image_class = "img-fluid w-120 z-depth-1 rounded" -%}
               {% endif %}
 
               {% include figure.html
@@ -40,12 +40,6 @@ horizontal: false
           <div class="clearfix">
             {{ content }}
           </div>
-          <!-- Media -->
-           <h4>Selected Media Coverage</h4>
-           {%- include media.html %}
-          <!-- Talk -->
-           <h4>Selected Talks</h4>
-           {%- include talks.html %}
           <!-- News -->
           {% if page.news and site.announcements.enabled -%}
             <h3>News</h3>
@@ -64,6 +58,14 @@ horizontal: false
             <h4 style="color: #9a9a9a; font-size: 0.9em; font-weight: normal;">(*denotes equal contribution)</h4>
             {%- include selected_papers.html %}
           {%- endif %}
+
+
+          <!-- Media -->
+           <h4>Selected Media Coverage</h4>
+           {%- include media.html %}
+          <!-- Talk -->
+           <h4>Selected Talks</h4>
+           {%- include talks.html %}
 
           <!-- Social -->
           {%- if page.social %}
