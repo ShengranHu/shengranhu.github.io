@@ -140,15 +140,17 @@
           <!-- Media -->
            <h2>Selected Media Coverage</h2>
 <style>
-  .media-container {
+    .media-container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 12px;
+    /* Six cards per row */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px; /* slightly smaller gap between cards */
     margin-top: 1rem;
     margin-bottom: 3rem;
-  }
+}
 
-  .media-card {
+/* Smaller, fixed-size cards */
+.media-card {
     background: white;
     border-radius: 12px;
     border: 1px solid #e5e7eb;
@@ -157,84 +159,52 @@
     text-decoration: none;
     color: inherit;
 
-    /* FIXED CARD DIMENSIONS (including padding): */
-    width: 100%;
-    height: 100px;
-    box-sizing: border-box;         /* ensure padding is included in that 100px */
+    /* FIXED DIMENSIONS: */
+    width: 100%;      /* fill its grid column */
+    height: 80px;     /* smaller height (example: 80px) */
 
-    /* Column layout so image is above caption: */
+    /* Center logo inside */
     display: flex;
-    flex-direction: column;
-    justify-content: center;       /* centers the group of image+caption vertically */
     align-items: center;
+    justify-content: center;
 
-    /* Tighter padding—bottom is smaller so caption sits closer to card’s bottom */
-    padding: 6px 6px 4px;
-
+    /* tighter padding */
+    padding: 6px;
     transition: all 0.3s ease;
-  }
-  .media-card:hover {
+}
+
+.media-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  }
+}
 
-  /* ----------
-     LOGO RULES
-     (force it to “best‐fit” in the top portion,
-      but not push the card taller than 100px)
-     ---------- */
-  .media-logo {
+/* Ensure the logo always “best-fit” inside the 80px-high card */
+.media-logo {
     max-width: 100%;
-    max-height: 56px;      /* so that logo + caption + padding never exceed 100px total */
+    max-height: 100%;
     object-fit: contain;
     display: block;
-    flex: 0 0 auto;        /* don’t let the image flex‐grow */
-  }
+}
 
-  /* ----------
-     CAPTION RULES
-     (small gap above, fixed font, no wrapping)
-     ---------- */
-  .media-caption {
-    margin-top: 2px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 12px;
-    line-height: 1.2;
-    text-align: center;
-    color: #333;
-
-    flex: 0 0 auto;        /* caption should not stretch */
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
-  }
-
-  /* --------
-     RESPONSIVE (optional)
-     -------- */
-  @media (max-width: 1024px) {
+/* RESPONSIVE ADJUSTMENT (optional) */
+@media (max-width: 1024px) {
     .media-container {
-      grid-template-columns: repeat(4, 1fr);
+        /* Fallback to 3 or 4 columns on narrower screens */
+        grid-template-columns: repeat(4, 1fr);
     }
-  }
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .media-container {
-      grid-template-columns: repeat(2, 1fr);
+        /* Stack to 2 columns on small/mobile */
+        grid-template-columns: repeat(2, 1fr);
     }
     .media-card {
-      height: 80px;
-      padding: 4px 4px 2px;
+        height: 60px;   /* optionally shrink further on mobile */
+        padding: 4px;
     }
-    .media-logo {
-      max-height: 40px;
-    }
-    .media-caption {
-      font-size: 10px;
-      margin-top: 1px;
-    }
-  }
-</style>
+}
+    </style>
     
     <div class="media-container">
     
@@ -267,7 +237,6 @@
 
         <a href="https://en.wikipedia.org/wiki/Timeline_of_computing_2020%E2%80%93present#cite_ref-107" class="media-card" target="_blank" rel="external nofollow noopener">
             <img src="/assets/img/media/wikipedia.png" alt="The Logic" class="media-logo">
-            <div class="media-caption">Timeline of computing 2020–present</div>
         </a>
     </div>
           <!-- Talk -->
