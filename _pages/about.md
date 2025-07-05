@@ -8,7 +8,7 @@ profile:
   align: right
   image: hsr.jpg
   image_circular: false # crops the image to make it circular
-  address: >
+  address: > Based in Vancouver, Canada. Currently living in Tokyo, Japan.
 
 
 news: true  # includes a list of news items
@@ -17,9 +17,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hello! I am Shengran Hu (胡圣然). I am a PhD student at University of British Columbia, advised by <a href="http://jeffclune.com/">Dr. Jeff Clune</a>. I am currently interning at <a href="https://sakana.ai/">Sakana AI</a> as a research scientist. 
+Hello! I am Shengran Hu (胡圣然). I am a PhD student at University of British Columbia and a student researcher in Vector Institute, advised by <a href="http://jeffclune.com/">Prof. Jeff Clune</a>. I am currently interning at <a href="https://sakana.ai/">Sakana AI</a> as a research scientist. 
 
-I want to understand the emergence of complexity, such as natural evolution and human scientific discoveries. I study this by building open-ended AI systems that can accumulate complexity in language.
+I’m interested in how patterns and knowledge emerge from complex systems like natural evolution and scientific discovery. I study this by building open-ended, agentic AI systems that can accumulate complexity in language.
 
 <p style="text-align:center">
                 <a href="mailto:hu.shengran@outlook.com">Email</a> / 
