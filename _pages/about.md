@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hello! I am Shengran Hu (胡圣然). I am a Computer Science Ph.D. student at University of British Columbia, advised by <a href="http://jeffclune.com/">Prof. Jeff Clune</a>. I am currently interning at <a href="https://sakana.ai/">Sakana AI</a> as a research scientist. 
+Hello! I am Shengran Hu (胡圣然). I am a Computer Science Ph.D. student at University of British Columbia, advised by <a href="http://jeffclune.com/">Prof. Jeff Clune</a>. Previously, I was a research scientist intern at <a href="https://sakana.ai/">Sakana AI</a>. 
 
 I’m interested in how patterns and knowledge emerge from complex systems like natural evolution and scientific discovery. I study this by building open-ended, agentic AI systems that can accumulate complexity in language.
 
