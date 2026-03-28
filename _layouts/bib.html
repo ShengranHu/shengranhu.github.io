@@ -176,6 +176,12 @@
                   <img src="https://img.shields.io/github/stars/{{ repo_path }}?style=social" alt="GitHub stars">
               </a>
           {%- endif %}
+          {%- if entry.code2 %}
+              {%- assign repo_path2 = entry.code2 | remove: 'https://github.com/' -%}
+              <a href="{{ entry.code2 }}" target="_blank">
+                  <img src="https://img.shields.io/github/stars/{{ repo_path2 }}?style=social" alt="GitHub stars">
+              </a>
+          {%- endif %}
           {%- if entry.pdf %}
             {% if entry.pdf contains '://' -%}
             [<a href="{{ entry.pdf }}" target="_blank">PDF</a>]
